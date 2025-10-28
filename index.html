@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio | Shabrina</title>
+    <link rel="icon" href="logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: { extend: {} },
+      };
+    </script>
+  </head>
+
+  <body class="bg-slate-900 text-slate-300 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-slate-800 shadow-lg sticky top-0 z-50">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-bold text-white">byShabrina</a>
+
+        <button
+          id="menu-toggle"
+          class="md:hidden text-2xl focus:outline-none text-slate-200"
+        >
+          &#9776;
+        </button>
+
+        <ul
+          id="menu-nav"
+          class="hidden md:flex md:items-center md:space-x-6 absolute md:static bg-slate-800 w-full md:w-auto left-0 top-16 md:top-auto shadow-md md:shadow-none py-4 md:py-0 text-center md:text-left transition-all duration-300 ease-in-out"
+        >
+          <li>
+            <a href="#home" class="hover:text-indigo-400 px-6 md:px-0">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="hover:text-indigo-400 px-6 md:px-0"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio" class="hover:text-indigo-400 px-6 md:px-0"
+              >Portofolio</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-indigo-400 px-6 md:px-0"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="container mx-auto px-6 py-20 text-center fade-in">
+      <img
+        src="poto_profil.jpg"
+        alt="Foto Profil"
+        class="w-64 h-40 rounded-lg mx-auto mb-6 shadow-lg border-4 border-slate-700 object-cover"
+      />
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">
+        Hello, I'm Shabrina
+      </h1>
+      <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+        A passionate learner who loves turning creative ideas into functional,
+        beautiful web designs.
+      </p>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="bg-slate-950 py-20 fade-in">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-8">About Me</h2>
+        <p class="max-w-3xl mx-auto text-slate-400 leading-relaxed">
+          I am a student who is enthusiastic about
+          <span class="text-indigo-400">web development</span> and
+          <span class="text-indigo-400">user interface design</span>. I enjoy
+          the process of creating web interfaces that are simple, interactive,
+          and easy to understand. For me, every project is an opportunity to
+          learn something new and express creativity in digital form.
+        </p>
+
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+          <span
+            class="bg-slate-800 text-slate-300 px-4 py-2 rounded-full shadow"
+            >HTML</span
+          >
+          <span
+            class="bg-slate-800 text-slate-300 px-4 py-2 rounded-full shadow"
+            >CSS</span
+          >
+          <span
+            class="bg-slate-800 text-slate-300 px-4 py-2 rounded-full shadow"
+            >Tailwind</span
+          >
+          <span
+            class="bg-slate-800 text-slate-300 px-4 py-2 rounded-full shadow"
+            >JavaScript</span
+          >
+          <span
+            class="bg-slate-800 text-slate-300 px-4 py-2 rounded-full shadow"
+            >UI Design</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="bg-slate-900 py-20 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-white">
+          Portofolio
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card Template -->
+          <div
+            class="bg-slate-800 border border-slate-700 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+          >
+            <img
+              src="project1.jpg"
+              alt="Project 1"
+              class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2 text-white">
+                💰 Budgetify (dummy project)
+              </h3>
+              <p class="text-slate-400 mb-4">
+                A finance web app that helps users track income and expenses.
+              </p>
+              <a href="#" class="text-indigo-400 hover:underline"
+                >Show Detail</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-slate-800 border border-slate-700 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+          >
+            <img
+              src="project2.jpg"
+              alt="Project 2"
+              class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2 text-white">
+                📅 Habit Tracker (dummy project)
+              </h3>
+              <p class="text-slate-400 mb-4">
+                A productivity app to help users maintain healthy habits.
+              </p>
+              <a href="#" class="text-indigo-400 hover:underline"
+                >Show Detail</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-slate-800 border border-slate-700 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+          >
+            <img
+              src="project3.jpg"
+              alt="Project 3"
+              class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2 text-white">
+                🥗 NutriNote (dummy project)
+              </h3>
+              <p class="text-slate-400 mb-4">
+                A nutrition tracking site for mindful eating.
+              </p>
+              <a href="#" class="text-indigo-400 hover:underline"
+                >Show Detail</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-slate-800 border border-slate-700 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+          >
+            <img
+              src="project4.jpg"
+              alt="Project 4"
+              class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2 text-white">
+                💭 MindEase (dummy project)
+              </h3>
+              <p class="text-slate-400 mb-4">
+                A journaling and mood-tracking platform.
+              </p>
+              <a href="#" class="text-indigo-400 hover:underline"
+                >Show Detail</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-slate-800 border border-slate-700 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+          >
+            <img
+              src="project5.jpg"
+              alt="Project 5"
+              class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2 text-white">
+                📚 Learnly (dummy project)
+              </h3>
+              <p class="text-slate-400 mb-4">
+                An interactive learning website for students.
+              </p>
+              <a href="#" class="text-indigo-400 hover:underline"
+                >Show Detail</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-slate-950 py-20 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-white">
+          Contact Me
+        </h2>
+        <form class="max-w-xl mx-auto bg-slate-800 p-8 rounded-lg shadow-md">
+          <div class="mb-4">
+            <label for="name" class="block text-slate-300 font-medium mb-2"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="w-full px-4 py-2 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-700 text-white"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-slate-300 font-medium mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="w-full px-4 py-2 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-700 text-white"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-slate-300 font-medium mb-2"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              rows="5"
+              class="w-full px-4 py-2 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-700 text-white"
+              required
+            ></textarea>
+          </div>
+          <div class="text-center">
+            <button
+              type="submit"
+              class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-slate-900 text-slate-400 text-center p-6 border-t border-slate-800"
+    >
+      <p>Dibuat oleh <span class="text-indigo-400">Shabrina</span> | 2025</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
